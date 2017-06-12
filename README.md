@@ -29,3 +29,11 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Production
+
+I have `ng build` and included that here as well located in the "dist" folder. I have commented code in my lotto.component.ts file located inside `src > app > lotto`. Due to the relativly simple functionality of this game / app, I implemented just one component. However, I could have easily broken it up into additional components.
+
+## Underscore
+
+I am using underscore for some pieces of code in my component - like _.each and _.isEqual to compare the winning number to the pick.
