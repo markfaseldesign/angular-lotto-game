@@ -37,7 +37,7 @@ export class LottoComponent implements OnInit {
     this.counter += 1; // Let's add 1 to the current counter value
   }
 
-  public playLotto(picks) {
+  public playLotto(picks: any) {
     // Let's set our winner variable to false to start
     let isWinner: boolean = false;
 
@@ -72,7 +72,7 @@ export class LottoComponent implements OnInit {
   }
 
   // Number generator with sorting the array min - max
-  public generateNumber(arr) {
+  public generateNumber(arr: any) {
     // Run a for loop like in our quick pick function 
     for(var i=0; i<5; ++i) { 
         this.random = this.randomNumber(1, 64);
@@ -85,7 +85,7 @@ export class LottoComponent implements OnInit {
   }
 
   // Helpers
-  public randomNumber(min, max){
+  public randomNumber(min: number, max: number){
       return Math.round(Math.random() * (max - min) + min);
   }
   public sortNumber(a,b) {
